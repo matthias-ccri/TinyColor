@@ -330,14 +330,14 @@ Deno.test("RGB Text Parsing", function () {
     "parenthesized spaced input"
   );
   assertEquals(
-    tinycolor("rgba(255, 25.5, 0, 0.5)").toRgb(),
+    tinycolor("rgba(33.3, 66.7, 1, 0.5)").toRgbValues(),
     {
-      r: 255,
-      g: 25.5,
-      b: 0,
+      r: 33.3,
+      g: 66.7,
+      b: 1,
       a: 0.5,
     },
-    "rgba with float"
+    "toRgbValues"
   );
   assertEquals(
     tinycolor({ r: 255, g: 0, b: 0 }).toHexString(),
